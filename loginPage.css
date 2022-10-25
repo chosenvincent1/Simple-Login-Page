@@ -1,0 +1,97 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    height: 100vh;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 30px; 
+}
+
+.text-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.text-container h1 {
+    font-size: 25px;
+}
+.text-container p {
+    font-size: 16px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+input[type=email],
+input[type=password] {
+    padding: 15px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+/* .forgot-password {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+} */
+
+
+input[type=submit] {
+    padding: 15px;
+    background-color: rgb(18, 18, 219);
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.link2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.signup {
+    display: flex;
+}
+
+.link2 .forgot-password {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.link2 .forgot-password:hover {
+    color: blue;
+}
+
+
+@media screen and (min-width: 600px) {
+   form {
+       max-width: 500px;
+       margin: auto;
+   }
+
+   .image-container {
+       max-width: 500px;
+       margin: auto;
+   }
+}
